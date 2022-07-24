@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin:0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+ }
+
+
+body {
+  box-sizing: border-box;
+  background: var(--color-mainBackground);
+}
+
+ul {
+  list-style: none; }
+
+a:link,
+a:visited {
+  text-decoration: none; 
+  color: unset;
+}
+

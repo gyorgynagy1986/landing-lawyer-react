@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Kotta+One&family=Lato&family=Roboto:wght@300;400&family=Rokkitt&display=swap');
+
+:root {
+
+    --with-body:100%;
+    --font-size:62.5%;
+    --max-width:225rem;
+
+    --font1-family:'Cinzel', serif;
+    --font2-family:'Roboto', sans-serif;
+    --font3-family:'Lato', sans-serif;
+    --font4-family:'Kotta One', serif;
+    --font5-family:'Rokkitt', serif;
+
+    --color-white: #FFFFFF;
+    --color-black: #0000;
+    
+    /*BACKGROUND*/
+    --color-mainBackground:#161616;
+    --color-background:#EDEDED;
+
+    /*TEXT*/
+    --color-hedTitle:#222529;
+    --color-headTitle2:rgba(255, 255, 255, 0.76);
+
+    --color-text:#454443;
+    --color-text2:#B0B0B0;
+    --color-tex3:#868584;
+    --color-text-nav: rgba(241, 243, 245, 0.8);
+
+    
+    /*TEXT BOXES*/
+    --color-textBoxBig:rgba(29, 31, 32, 0.65);
+    --color-textBox:#454443;
+
+
+    /*STROKE, UNDERLINE, SEND BUTTON, TEXT*/
+    --color-gold: #AC7F51;
+    --color-gold2:#8C7156;
+
+    --color-footer:linear-gradient(269.99deg, #454443 30.18%, #222529 85.7%);
+}
+

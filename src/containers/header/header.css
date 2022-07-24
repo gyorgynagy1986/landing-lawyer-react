@@ -1,0 +1,218 @@
+
+.section-header {
+    width: var(--with-body);
+    max-width: var(--max-width);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.bimage {
+    background-image: url(/src/assets/header-cover.jpg);
+    background-size:cover;
+    /*background-attachment: fixed; */
+    background-position: center;
+    position: relative;
+    animation: preloading 3s ease;  
+}
+
+@keyframes preloading {
+    0%    { opacity: 0; }
+    100%  { opacity: 1; }
+  }
+
+
+
+@media only screen and (max-width: 600px) {
+    .section-header {
+       max-width: 100%;
+       height: 100%;
+       background-image: url(/src/assets/head-cover-mobile.jpg);
+       background-position: inherit;
+       background-size:contain;
+    }
+  }
+
+.container-header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 59% 41%;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-header {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+.nameTitle p {
+    width: 50%;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    font-size: 7rem;
+    letter-spacing: 0.1em;
+    color: var(--color-headTitle2);
+    font-family: var(--font1-family);
+    opacity: 1;
+    animation: name-of-animation 2s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .nameTitle p {
+        font-size: 5rem;
+        margin-top: 8rem;
+        margin-bottom: 2.5rem;
+        margin-left: 0;        text-align: center;
+        width: 100%;
+    }
+  }
+
+@keyframes name-of-animation {
+    0%    { opacity: 0; }
+    100%  { opacity: 1; }
+    
+    0%    { transform:translateY(-1rem); }
+    100%  { transform:translateY(0); }
+
+}
+
+.texBox-container  {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.textBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background: black;
+    margin: 2rem;
+    background: var(--color-textBoxBig);
+    box-shadow: 0px 4px 30px 1px rgba(7, 7, 7, 0.81);
+}
+
+@media only screen and (max-width: 600px) {
+    .textBox {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+  }
+
+.textBox-title {
+    font-family: var(--font1-family);
+    letter-spacing: 0.25em;
+    font-size: 3.6rem;
+    line-height: 120px;
+    color: var(--color-text2);
+    animation: name-of-animation 2s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .textBox-title {
+        font-size: 2.8rem;
+        line-height: 60px;
+    }
+  }
+
+.textBox-bilding {
+    margin-bottom: 2rem;
+    width: auto;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .textBox-bilding {
+        margin-bottom: 1rem;
+        width: 10%;
+        height: auto;
+    }
+  }
+
+.textBox-line {
+    width: 100%;
+    max-width: 44.6rem;
+    height: 1px;
+    margin-bottom: 2rem;
+    background: rgba(176, 176, 176, 0.28);
+}
+
+.textBox-text {
+    width: 100%;
+    max-width: 44.6rem;
+    font-family: var(--font4-family);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 6rem;
+    letter-spacing: 0.25em;
+    color: var(--color-text2);
+    animation: animation-of-textBoxTex  5s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .textBox-text {
+        font-size: 1.6rem;
+        line-height: 5rem;
+    }
+  }
+
+@keyframes animation-of-textBoxTex {
+    0%    { opacity: 0; }
+    100%  { opacity: 1; }  
+}
+
+
+.textBox-text-span {
+    color: var(--color-gold);
+}
+
+.textBox-libra {
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .textBox-libra {
+        margin-bottom: 1rem;
+        margin-top: 1.3rem;
+        width: 10%;
+        height: auto;
+    }
+  }
+
+.button-header {
+    position: absolute;
+    bottom: 3rem;
+    left: 5rem;
+    width: 208px;
+    height: 52px;
+    outline: unset;
+    background: none;
+    border: 1px solid var(--color-gold2);
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: var( --font5-family);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.3em;
+    color:var(--color-text-nav);
+    transition: all 0.2s linear 0s;
+}
+
+@media only screen and (max-width: 600px) {
+    .button-header {
+       display: none;
+    }
+  }
+
+.button-header:hover {
+    color: black;
+    background: var(--color-gold2);
+}
